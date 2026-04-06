@@ -8,8 +8,6 @@ export function HeroHighlight() {
     "/Projects/Damepelis 2.png",
     "/Projects/Damepelis 3.png",
     "/Projects/Damepelis.png",
-    "/Projects/Devhive 2.png",
-    "/Projects/Devhive 3.png",
     "/Projects/Devhive.png",
   ] as const;
   const [currentIndex, setCurrentIndex] = useState(0);

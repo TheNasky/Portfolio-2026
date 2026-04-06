@@ -6,7 +6,7 @@ This portfolio is designed as a technical presentation: selected projects, engin
 
 ## Live Portfolio
 
-- Portfolio: `your-domain-here` (update when final domain is ready)
+- Portfolio: [valentin-ballesteros-2026.vercel.app](https://valentin-ballesteros-2026.vercel.app/)
 
 ## Featured Projects
 
@@ -48,6 +48,12 @@ Core stack highlighted in portfolio:
 - Backend: Node.js, NestJS/Express, PostgreSQL, MongoDB, Redis
 - Infra: Docker, AWS, Vercel, GitHub Actions
 - Architecture: REST APIs, WebSockets, Microservices, Event-driven, Caching
+
+## Engineering Approach
+
+- Foundation: Define the problem worth solving
+- Architecture: Design for the team and long-term maintainability
+- Implementation: Ship clean, pragmatic, production-ready systems
 
 ## Contact
 
