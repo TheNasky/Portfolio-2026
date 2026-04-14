@@ -22,7 +22,7 @@ export function PhilosophySection() {
               <div className="space-y-4">
                 <div className="space-y-2">
                   <p className="text-xs font-medium uppercase tracking-[0.2em] text-muted">
-                    {item.number} — {item.label}
+                    {item.number}, {item.label}
                   </p>
                   <h3 className="text-lg font-medium tracking-tight md:text-xl">
                     {item.title}

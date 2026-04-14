@@ -27,7 +27,7 @@ export function SelectedWorkSection() {
               <div className={`space-y-6 ${textOrder} md:col-span-6`}>
                 <div className="space-y-3">
                   <h3 className="text-2xl font-semibold tracking-tight md:text-3xl">
-                    {project.title} — {project.architecturalDescriptor}
+                    {project.title}, {project.architecturalDescriptor}
                   </h3>
                   <p className="text-base leading-7 text-muted md:text-lg">
                     {project.description}
@@ -55,18 +55,30 @@ export function SelectedWorkSection() {
                 <div className="flex items-center gap-5">
                   <a
                     href={project.githubLink ?? "#"}
+                    target={
+                      project.githubLink?.startsWith("http") ? "_blank" : undefined
+                    }
+                    rel={
+                      project.githubLink?.startsWith("http")
+                        ? "noopener noreferrer"
+                        : undefined
+                    }
                     className="inline-flex items-center gap-2 text-sm font-medium text-muted transition-colors hover:text-foreground"
                   >
                     GitHub
                     <span className="text-xs">→</span>
                   </a>
-                  <a
-                    href={project.deployLink ?? "#"}
-                    className="inline-flex items-center gap-2 text-sm font-medium text-muted transition-colors hover:text-foreground"
-                  >
-                    Deploy
-                    <span className="text-xs">→</span>
-                  </a>
+                  {project.deployLink ? (
+                    <a
+                      href={project.deployLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 text-sm font-medium text-muted transition-colors hover:text-foreground"
+                    >
+                      Deploy
+                      <span className="text-xs">→</span>
+                    </a>
+                  ) : null}
                 </div>
               </div>
 

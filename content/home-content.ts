@@ -76,6 +76,22 @@ export type SelectedWorkItem = {
 
 export const selectedWorkItems: SelectedWorkItem[] = [
   {
+    title: "AI Insights Platform",
+    architecturalDescriptor: "Intelligent Text Analysis for Product Teams",
+    description:
+      "Web app that turns raw feedback, notes, or long-form text into summaries, keywords, categories, and suggestions, aimed at teams who want structured insight without a clunky workflow. Progress is easy to follow from start to finish, and there is a dedicated view to inspect how each analysis step runs when you want to go deeper.",
+    highlights: [
+      "Built an end-to-end flow from input text to structured results and recommendations",
+      "Designed background processing so the interface stays responsive while heavier work runs asynchronously",
+      "Added a transparency view for timelines, per-step timing, and decision detail for debugging and trust",
+      "Implemented with Vue, NestJS, and a queue-backed worker model that mirrors production-style pipelines",
+    ],
+    authoritySignal:
+      "Designed to pair a polished product surface with observable, debuggable internals",
+    image: "/Projects/Insight app.png",
+    githubLink: "https://github.com/TheNasky/Ai-Insights-RabbitMQ-VUE",
+  },
+  {
     title: "DamePelis",
     architecturalDescriptor: "Scalable Media Streaming Architecture",
     description:

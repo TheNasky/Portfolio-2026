@@ -5,17 +5,13 @@ import { LayeredImageOverlay } from "./LayeredImageOverlay";
 
 export function HeroHighlight() {
   const projectShowcases = [
+    "/Projects/Insight app.png",
+    "/Projects/Devhive.png",
+    "/Projects/Damepelis.png",
     "/Projects/Damepelis 2.png",
     "/Projects/Damepelis 3.png",
-    "/Projects/Damepelis.png",
-    "/Projects/Devhive.png",
   ] as const;
-  const devhiveIndex = projectShowcases.findIndex((src) =>
-    src.toLowerCase().includes("devhive"),
-  );
-  const [currentIndex, setCurrentIndex] = useState(
-    devhiveIndex >= 0 ? devhiveIndex : 0,
-  );
+  const [currentIndex, setCurrentIndex] = useState(0);
 
   const handleNextImage = () => {
     setCurrentIndex((prev) => (prev + 1) % projectShowcases.length);

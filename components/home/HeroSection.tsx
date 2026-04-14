@@ -112,6 +112,8 @@ export function HeroSection() {
               <a
                 href="/Valentin-Ballesteros-2025-English.pdf"
                 download="Valentin-Ballesteros-2025-English.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
                 onClick={() => setIsCvModalOpen(false)}
                 className="flex-1 rounded-full bg-accent px-5 py-3 text-sm font-medium text-[#06110d] text-center transition-colors hover:bg-accent-hover"
               >
@@ -120,6 +122,8 @@ export function HeroSection() {
               <a
                 href="/Valentin-Ballesteros-2025-Spanish.pdf"
                 download="Valentin-Ballesteros-2025-Spanish.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
                 onClick={() => setIsCvModalOpen(false)}
                 className="flex-1 rounded-full border border-white/15 bg-surface px-5 py-3 text-sm font-medium text-center transition-colors hover:border-accent/50"
               >
