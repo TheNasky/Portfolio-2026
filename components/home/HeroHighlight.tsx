@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { LayeredImageOverlay } from "./LayeredImageOverlay";
 
 export function HeroHighlight() {
@@ -10,12 +10,12 @@ export function HeroHighlight() {
     "/Projects/Damepelis.png",
     "/Projects/Devhive.png",
   ] as const;
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  useEffect(() => {
-    const randomIndex = Math.floor(Math.random() * projectShowcases.length);
-    setCurrentIndex(randomIndex);
-  }, [projectShowcases.length]);
+  const devhiveIndex = projectShowcases.findIndex((src) =>
+    src.toLowerCase().includes("devhive"),
+  );
+  const [currentIndex, setCurrentIndex] = useState(
+    devhiveIndex >= 0 ? devhiveIndex : 0,
+  );
 
   const handleNextImage = () => {
     setCurrentIndex((prev) => (prev + 1) % projectShowcases.length);
