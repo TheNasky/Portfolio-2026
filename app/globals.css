@@ -34,6 +34,13 @@ body {
   overflow-x: hidden;
 }
 
+/* Sharper scaling for photos and UI screenshots (Next/Image outputs <img>) */
+@supports (image-rendering: high-quality) {
+  img {
+    image-rendering: high-quality;
+  }
+}
+
 ::selection {
   background: rgba(0, 192, 120, 0.25);
 }

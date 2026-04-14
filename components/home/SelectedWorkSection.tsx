@@ -91,6 +91,7 @@ export function SelectedWorkSection() {
                       src={project.image}
                       alt={`${project.title} preview`}
                       fill
+                      quality={100}
                       className="object-cover"
                       sizes="(max-width: 768px) 100vw, 50vw"
                     />

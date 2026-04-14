@@ -102,6 +102,7 @@ export function LayeredImageOverlay({
                 src={baseImage}
                 alt={baseAlt}
                 fill
+                quality={100}
                 className="object-contain object-top"
                 priority
                 sizes="(max-width: 768px) 95vw, 50vw"
@@ -131,6 +132,8 @@ export function LayeredImageOverlay({
                       src={overlay.src}
                       alt={overlay.alt}
                       fill
+                      quality={100}
+                      sizes="(max-width: 768px) 95vw, 50vw"
                       className="object-contain object-bottom"
                     />
                   </div>
